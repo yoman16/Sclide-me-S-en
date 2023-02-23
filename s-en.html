@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schlide du me S-en?</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #333;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-shadow: 3px 3px #000;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+
+      .button {
+        padding: 0.5rem 2rem;
+        margin: 0 1rem;
+        border: none;
+        border-radius: 3px;
+        background-color: #fff;
+        color: #333;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #ffcc00;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Schlide du me <span style="color: #ffcc00;">S</span>-en?</h1>
+    <div class="buttons">
+      <button class="button" id="yesButton">Ja</button>
+      <button class="button" id="noButton">Nei</button>
+    </div>
+
+    <script>
+      const yesButton = document.getElementById("yesButton");
+      const noButton = document.getElementById("noButton");
+
+      yesButton.addEventListener("click", () => {
+        alert("Mjæo mjæo");
+      });
+
+      noButton.addEventListener("click", () => {
+        alert("Ærh");
+      });
+    </script>
+  </body>
+</html>
+
+
