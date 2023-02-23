@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schlide du me S-en?</title>
+	<style>
+		body {
+			background-color: #1E1E1E;
+			color: #FFFFFF;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin-top: 100px;
+		}
+
+		h1 {
+			font-size: 72px;
+			font-weight: bold;
+			text-shadow: 3px 3px 0px #FFD700;
+			letter-spacing: 10px;
+			margin-bottom: 50px;
+		}
+
+		button {
+			padding: 20px 40px;
+			font-size: 24px;
+			background-color: #FFD700;
+			color: #1E1E1E;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 3px 3px 0px #1E1E1E;
+			cursor: pointer;
+			margin: 20px;
+		}
+
+		button:hover {
+			background-color: #FFFFFF;
+			color: #1E1E1E;
+			box-shadow: 1px 1px 0px #1E1E1E;
+		}
+	</style>
+</head>
+<body>
+	<h1>Schlide du me S-en?</h1>
+
+	<audio id="yesAudio" src="yes.mp3"></audio>
+	<audio id="noAudio" src="no.mp3"></audio>
+
+	<button onclick="playYes()">Ja</button>
+	<button onclick="playNo()">Nei</button>
+
+	<script>
+		function playYes() {
+			document.getElementById("yesAudio").play();
+		}
+
+		function playNo() {
+			document.getElementById("noAudio").play();
+		}
+	</script>
+</body>
+</html>
